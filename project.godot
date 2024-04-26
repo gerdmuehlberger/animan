@@ -1,0 +1,31 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="animan"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
+
+[aseprite_importers]
+
+aseprite_executable_path="C:/Program Files (x86)/Steam/steamapps/common/Aseprite/Aseprite.exe"
+
+[dotnet]
+
+project/assembly_name="animan"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/nklbdev.aseprite_importers/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="mobile"
